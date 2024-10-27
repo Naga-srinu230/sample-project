@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <title>index</title>
+    {% load static %}
+    <link href ="{%static 'css/style.css'%}" rel ="stylesheet">
+    <style type = "text/css">  
+        #bg{  
+        width: 200px;  
+        height: 200px;  
+        border: 4px solid blue;  
+        }  
+        </style>  <!--<script src ="c:\Users\nagas\Desktop\Loard Balaji.jpg">alert("Hello, welcome to image") </script> -->
+</head>
+<body>
+    <h1> we are going to adding images</h1>
+    <img src ="{%static '/Loard Balaji.jpg'%}" alt ="Loard Balaji" height ="300px" width ="700px"/>
+    <form onclick="image()">
+        <input type ="submit" value ="Submit!"/>
+    </form>
+    <script>
+        window.onload = function(){  
+           alert("welcome to Loard Balaji ");
+            }  
+        document.write("loard balaji is a god of universe");
+    </script> 
+</body>
+</html>

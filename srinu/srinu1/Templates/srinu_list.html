@@ -1,0 +1,19 @@
+<!-- templates/srinu1/srinu_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinu List</title>
+</head>
+<body>
+    <h1>Srinu List</h1>
+    <ul>
+        {% for srinu in srinu_objects %}
+            <li>{{ srinu.first_name }} {{ srinu.last_name }} - Age: {{ srinu.age }} - Mobile: {{ srinu.mobile_number }} - Address: {{ srinu.address }} - DOB: {{ srinu.dateofbirth }}</li>
+        {% empty %}
+            <li>No records found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
